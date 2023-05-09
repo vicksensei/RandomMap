@@ -23,7 +23,7 @@ body {
   align-items: center;
   padding: 5vw 5vh;
   border-radius: 1vw;
-  background-color: purple;
+  background-color: #62008c;
   width: 70%;
 }
 .container > div {
@@ -48,6 +48,10 @@ body {
   margin: 1vw;
   border: solid 2px white;
 }
+input {
+  width: 90%;
+  font-size: larger;
+}
 .button:hover {
   color: darkblue;
   background-color: white;
@@ -65,10 +69,6 @@ body {
   .container > div {
     height: 40vh;
     width: 100%;
-  }
-  input {
-    width: 90%;
-    font-size: larger;
   }
   .sliderContainer {
     width: 100%;
