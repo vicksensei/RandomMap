@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Canvas Example</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Random Map generator</h1>
+    <div class="container">
+      <div class="controls">
+        <h2>Controls</h2>
+        <div class="button" onclick="ClickRandom()">Random Map</div>
+        <div class="sliderContainer">
+          <p>Sea Level: <span id="SeaLevelDisp">0</span></p>
+          <input
+            type="range"
+            min="-10"
+            max="10"
+            value="0"
+            id="SeaLevel"
+            onchange="ChangeSeaLevel()"
+          />
+        </div>
+        <div class="sliderContainer">
+          <p>Random Seed:</p>
+          <input id="seedElement" value="0" />
+        </div>
+        <div class="button" onclick="Regenerate()">Generate with new seed</div>
+      </div>
+      <div>
+        <div>Map Preview</div>
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

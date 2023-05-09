@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+  font-family: "MedievalSharp", cursive;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2vw;
+}
+#canvas {
+  width: 80%;
+}
+
+.container {
+  color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw 5vh;
+  border-radius: 1vw;
+  background-color: purple;
+}
+.container > div {
+  padding: 2vw;
+  margin: 1vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2vw;
+  height: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.button {
+  width: 80%;
+  border-radius: 2vw;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 1vw;
+  margin: 1vw;
+  border: solid 2px white;
+}
+.button:hover {
+  color: darkblue;
+  background-color: white;
+  border: solid 2px darkblue;
+}
+@media (min-width: 600px) and (orientation: portrait) {
+  body {
+    font-size: 3vw;
+  }
+  .container {
+    flex-direction: column-reverse;
+    height: 80vh;
+    width: 70vw;
+  }
+  .container > div {
+    height: 40vh;
+    width: 100%;
+  }
+  input {
+    width: 90%;
+    font-size: larger;
+  }
+  .sliderContainer {
+    width: 100%;
+  }
+}
